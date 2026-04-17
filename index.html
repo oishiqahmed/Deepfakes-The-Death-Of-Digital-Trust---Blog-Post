@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepfakes & The Death of Digital Trust</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">DEEPFAKES<span class="nav-logo-accent">.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#what" class="nav-link">What Are Deepfakes</a></li>
+      <li><a href="#problem" class="nav-link">The Problem</a></li>
+      <li><a href="#cybercrime" class="nav-link">Cybercrime</a></li>
+      <li><a href="#why" class="nav-link">Why It Matters</a></li>
+      <li><a href="#solutions" class="nav-link">Solutions</a></li>
+      <li><a href="#quiz" class="nav-link nav-cta">Take The Quiz</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="noise-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      A Digital Investigation · 2026
+    </div>
+    <h1 class="hero-title">
+      <span class="title-line">Deepfakes &amp;</span>
+      <span class="title-line title-accent">The Death of</span>
+      <span class="title-line">Digital Trust</span>
+    </h1>
+    <p class="hero-sub">When seeing is no longer believing, what does reality mean?<br>AI-generated media is reshaping truth itself.</p>
+    <div class="hero-stats">
+      <div class="stat-pill">
+        <span class="stat-num">$40B</span>
+        <span class="stat-label">Projected AI fraud losses by 2027</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-num">59%</span>
+        <span class="stat-label">Can't tell AI from human content</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-num">1/5min</span>
+        <span class="stat-label">Rate of deepfake attacks in 2024</span>
+      </div>
+    </div>
+    <a href="#what" class="hero-cta">Explore the Investigation <span>↓</span></a>
+  </div>
+  <div class="hero-scroll-indicator">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Section: What Are Deepfakes -->
+<section id="what" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Chapter 01</span>
+      <h2 class="section-title">What Are Deepfakes?</h2>
+    </div>
+    <div class="what-layout">
+      <div class="what-text">
+        <p class="lead-text">The word "deepfake" blends "deep learning" with "fake" — a fusion that captures the technology's essence perfectly. Using sophisticated AI architectures called Generative Adversarial Networks (GANs) and newer diffusion models, machines learn to fabricate human faces, voices, and entire video sequences that are indistinguishable from reality.</p>
+        <p>Originally emerging from academic research in the mid-2010s, deepfake tools were once the exclusive domain of well-funded film studios and research labs. Today, a convincing voice clone can be generated from as little as three seconds of source audio. Video deepfakes can be produced in minutes on consumer hardware.</p>
+        <p>The technology works through a feedback loop: one AI network generates fake content, while another tries to detect it as fake. Over millions of cycles, the generator gets better and better — until neither human nor machine can reliably tell the difference.</p>
+      </div>
+      <div class="what-visual">
+        <div class="tech-card">
+          <div class="tech-header">
+            <span class="tech-icon">⬡</span>
+            <h3>How It Works</h3>
+          </div>
+          <div class="tech-steps">
+            <div class="tech-step">
+              <span class="step-num">01</span>
+              <div>
+                <strong>Data Collection</strong>
+                <p>AI ingests thousands of images, videos, or audio samples of a target person from public sources.</p>
+              </div>
+            </div>
+            <div class="tech-step">
+              <span class="step-num">02</span>
+              <div>
+                <strong>GAN Training</strong>
+                <p>A Generator creates fakes; a Discriminator tries to detect them. Each improves the other.</p>
+              </div>
+            </div>
+            <div class="tech-step">
+              <span class="step-num">03</span>
+              <div>
+                <strong>Synthesis</strong>
+                <p>The trained model can now produce new content — faces, voices, video — of any person saying or doing anything.</p>
+              </div>
+            </div>
+            <div class="tech-step">
+              <span class="step-num">04</span>
+              <div>
+                <strong>Distribution</strong>
+                <p>Social media spreads synthetic content at viral speed before verification can catch up.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Comparison Slider -->
+    <div class="comparison-section">
+      <h3 class="comparison-title">The Spectrum of Synthetic Media</h3>
+      <div class="media-types">
+        <div class="media-type-card">
+          <div class="media-icon video-icon">▶</div>
+          <h4>Video Deepfakes</h4>
+          <p>Face swaps, lip-sync manipulation, and full-body synthesis. Capable of placing anyone in fabricated scenes.</p>
+          <div class="threat-meter">
+            <div class="threat-fill" style="--fill: 92%"></div>
+          </div>
+          <span class="threat-label">Threat Level: Critical</span>
+        </div>
+        <div class="media-type-card">
+          <div class="media-icon audio-icon">🎙</div>
+          <h4>Voice Cloning</h4>
+          <p>From 3 seconds of audio, AI can replicate anyone's voice with 85% accuracy — used for fraud and impersonation scams.</p>
+          <div class="threat-meter">
+            <div class="threat-fill" style="--fill: 88%"></div>
+          </div>
+          <span class="threat-label">Threat Level: High</span>
+        </div>
+        <div class="media-type-card">
+          <div class="media-icon image-icon">◉</div>
+          <h4>Synthetic Images</h4>
+          <p>AI-generated faces of people who have never existed, used to build fake social identities at scale.</p>
+          <div class="threat-meter">
+            <div class="threat-fill" style="--fill: 79%"></div>
+          </div>
+          <span class="threat-label">Threat Level: High</span>
+        </div>
+        <div class="media-type-card">
+          <div class="media-icon text-icon">✦</div>
+          <h4>Text Synthesis</h4>
+          <p>AI-generated articles, quotes, and social posts attributed to real people — capable of rewriting public discourse.</p>
+          <div class="threat-meter">
+            <div class="threat-fill" style="--fill: 71%"></div>
+          </div>
+          <span class="threat-label">Threat Level: Elevated</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: The Problem -->
+<section id="problem" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag light">Chapter 02</span>
+      <h2 class="section-title light">The Problem</h2>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-feature">
+        <div class="quote-block">
+          <blockquote>"We are approaching a synthetic reality threshold — a point beyond which humans can no longer distinguish authentic from fabricated media without technological assistance."</blockquote>
+          <cite>— UNESCO, 2025</cite>
+        </div>
+      </div>
+
+      <div class="problem-stats-column">
+        <div class="big-stat">
+          <div class="big-number" data-target="68">0</div>
+          <div class="big-percent">%</div>
+          <p>of people familiar with generative AI are concerned synthetic content will be used to deceive or scam them</p>
+          <cite>Deloitte Connected Consumer Study, 2024</cite>
+        </div>
+        <div class="big-stat">
+          <div class="big-number" data-target="59">0</div>
+          <div class="big-percent">%</div>
+          <p>report difficulty distinguishing between AI-generated and human-created media</p>
+          <cite>Deloitte, 2024</cite>
+        </div>
+        <div class="big-stat">
+          <div class="big-number" data-target="90">0</div>
+          <div class="big-percent">%</div>
+          <p>of surveyed consumers expressed concern about deepfake and voice cloning technology</p>
+          <cite>Pindrop/Voicebot.ai survey, 2,000+ respondents</cite>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-erosion">
+      <h3 class="subsection-title">The Erosion of Trust</h3>
+      <div class="erosion-timeline">
+        <div class="era-block">
+          <div class="era-year">Pre-2015</div>
+          <div class="era-bar"><div class="era-fill trust-high"></div></div>
+          <div class="era-label">Trust in digital media relatively stable</div>
+        </div>
+        <div class="era-block">
+          <div class="era-year">2016–19</div>
+          <div class="era-bar"><div class="era-fill trust-medium"></div></div>
+          <div class="era-label">Deepfakes emerge; early detection possible</div>
+        </div>
+        <div class="era-block">
+          <div class="era-year">2020–22</div>
+          <div class="era-bar"><div class="era-fill trust-low"></div></div>
+          <div class="era-label">COVID-era disinformation accelerates decline</div>
+        </div>
+        <div class="era-block">
+          <div class="era-year">2023–25</div>
+          <div class="era-bar"><div class="era-fill trust-critical"></div></div>
+          <div class="era-label">Only 7% of US adults trust mass media fully</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="impact-areas">
+      <div class="impact-card">
+        <span class="impact-icon">📰</span>
+        <h4>Journalism</h4>
+        <p>Detection tools remain unreliable for journalists working under deadline pressure. Experts at the Tow Center warn these tools may even weaken journalistic rigor by providing false confidence.</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-icon">⚖️</span>
+        <h4>Legal Systems</h4>
+        <p>Deepfakes can taint legal evidence. Courts in the US (35%) and UAE (36%) now grapple with fabricated recordings presented as real proof.</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-icon">🗳️</span>
+        <h4>Democracy</h4>
+        <p>Political deepfakes surfaced in 38 countries between 2023–24. AI-generated robocalls in New Hampshire impersonated a sitting US president to suppress voter turnout.</p>
+      </div>
+      <div class="impact-card">
+        <span class="impact-icon">🏥</span>
+        <h4>Healthcare</h4>
+        <p>Medical deepfakes of doctors promote scams and fabricated clinical data threatens evidence-based medicine — a "crisis of evidence" according to researchers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: Cybercrime & Misinformation -->
+<section id="cybercrime" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Chapter 03</span>
+      <h2 class="section-title">Cybercrime &amp; Misinformation</h2>
+    </div>
+
+    <div class="crime-intro">
+      <p class="lead-text">Deepfakes have crossed from theoretical threat to everyday weapon. In 2024, a deepfake attack occurred every five minutes. The financial and reputational consequences are staggering — and accelerating.</p>
+    </div>
+
+    <!-- Case Studies -->
+    <div class="cases-grid">
+      <div class="case-card case-major">
+        <div class="case-tag">Financial Fraud</div>
+        <h3>$25 Million Stolen in One Video Call</h3>
+        <p>In January 2024, fraudsters used deepfake technology to impersonate a company's CFO on a live video call. An employee, believing they were speaking to a real executive, transferred $25 million before the deception was discovered.</p>
+        <div class="case-detail">
+          <span class="case-loc">📍 Hong Kong</span>
+          <span class="case-year">2024</span>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-tag">Voice Fraud</div>
+        <h3>CEO Voice Clone Costs €200,000</h3>
+        <p>A European firm lost over €200,000 after an employee received voice instructions from what they believed was their CEO — a perfect AI voice clone generated from publicly available audio.</p>
+        <div class="case-detail">
+          <span class="case-loc">📍 Europe</span>
+          <span class="case-year">2023</span>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-tag">Reputation Attack</div>
+        <h3>School Principal Defamed by AI Audio</h3>
+        <p>A Maryland school administrator was placed on administrative leave after an AI-generated audio clip mimicking his voice with racist and antisemitic slurs went viral. The clip was fabricated by a school employee under investigation for unrelated theft.</p>
+        <div class="case-detail">
+          <span class="case-loc">📍 Maryland, USA</span>
+          <span class="case-year">2024</span>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-tag">Election Interference</div>
+        <h3>Biden Deepfake Suppresses Voters</h3>
+        <p>Ahead of the 2024 US elections, AI-generated robocalls mimicking President Biden's voice reached thousands of New Hampshire voters, urging them not to vote in the primary.</p>
+        <div class="case-detail">
+          <span class="case-loc">📍 New Hampshire, USA</span>
+          <span class="case-year">2024</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Visualization -->
+    <div class="data-viz-section">
+      <h3 class="subsection-title">The Scale of the Crisis</h3>
+      <div class="chart-container">
+        <div class="bar-chart">
+          <div class="chart-label-y">Projected US Fraud Losses (Deloitte)</div>
+          <div class="bars">
+            <div class="bar-group">
+              <div class="bar" style="--height: 30.75%; --color: var(--accent-muted)">
+                <span class="bar-val">$12.3B</span>
+              </div>
+              <span class="bar-year">2023</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="--height: 50%; --color: var(--accent-mid)">
+                <span class="bar-val">~$20B</span>
+              </div>
+              <span class="bar-year">2025</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar bar-highlight" style="--height: 100%; --color: var(--accent)">
+                <span class="bar-val">$40B</span>
+              </div>
+              <span class="bar-year">2027</span>
+            </div>
+          </div>
+        </div>
+        <div class="chart-facts">
+          <div class="fact-item">
+            <div class="fact-icon">🌍</div>
+            <div>
+              <strong>82 political deepfakes</strong> identified across 38 countries between July 2023–July 2024
+            </div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-icon">🎙️</div>
+            <div>
+              <strong>1 in 4 adults</strong> have experienced an AI voice scam (McAfee, 2024)
+            </div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-icon">🏢</div>
+            <div>
+              <strong>49% of businesses globally</strong> reported audio or video deepfake incidents by 2024
+            </div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-icon">📈</div>
+            <div>
+              <strong>245% year-over-year rise</strong> in deepfake-related misinformation globally
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: Why This Matters -->
+<section id="why" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag light">Chapter 04</span>
+      <h2 class="section-title light">Why This Matters</h2>
+    </div>
+
+    <div class="why-layout">
+      <div class="why-text">
+        <p class="lead-text light-text">The deepfake crisis is not merely a technical problem. It strikes at something far more fundamental: the shared epistemic foundation on which society depends.</p>
+
+        <div class="why-point">
+          <div class="why-number">I.</div>
+          <div>
+            <h4>The Liar's Dividend</h4>
+            <p>Beyond spreading falsehoods, deepfakes enable "plausible deniability." A public figure can now dismiss a genuine, incriminating recording as a probable fake. This double bind — where neither belief nor disbelief in evidence can be justified — corrodes accountability at every level.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-number">II.</div>
+          <div>
+            <h4>The Illusory Truth Effect</h4>
+            <p>Social media amplifies synthetic content through a psychological phenomenon: repeated exposure to information — even false information — makes it feel more credible. Research across eight countries confirms that prior exposure to deepfakes increases susceptibility to misinformation, regardless of cognitive ability.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-number">III.</div>
+          <div>
+            <h4>Vulnerable Populations</h4>
+            <p>Awareness of deepfakes drops sharply among people over 60. In developing societies with limited fact-checking infrastructure, hyperrealistic media can incite unrest and destabilize fragile democracies. During Nigeria's 2023 elections, deepfakes were deployed as political weapons.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-number">IV.</div>
+          <div>
+            <h4>Personal Harm at Scale</h4>
+            <p>Non-consensual synthetic pornography, primarily targeting women, represents one of deepfakes' most pervasive harms. South Korea recorded nearly 300 deepfake sex crime cases in just seven months of 2024 — nearly double the 2021 figure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <div class="stakes-dial">
+          <div class="dial-label">Societal Risk Index</div>
+          <svg viewBox="0 0 200 120" class="dial-svg">
+            <defs>
+              <linearGradient id="dialGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#1a472a"/>
+                <stop offset="50%" style="stop-color:#d4a017"/>
+                <stop offset="100%" style="stop-color:#c0392b"/>
+              </linearGradient>
+            </defs>
+            <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round"/>
+            <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#dialGrad)" stroke-width="14" stroke-linecap="round" class="dial-arc" stroke-dasharray="252" stroke-dashoffset="30"/>
+            <line x1="100" y1="100" x2="165" y2="42" stroke="var(--text-primary)" stroke-width="2.5" stroke-linecap="round" class="dial-needle"/>
+            <circle cx="100" cy="100" r="6" fill="var(--accent)" />
+            <text x="20" y="115" fill="#666" font-size="9" font-family="DM Mono">LOW</text>
+            <text x="80" y="22" fill="#666" font-size="9" font-family="DM Mono">MID</text>
+            <text x="163" y="115" fill="#c0392b" font-size="9" font-family="DM Mono">CRITICAL</text>
+          </svg>
+          <div class="dial-value">CRITICAL</div>
+          <p class="dial-desc">Based on UNESCO, Deloitte, and Recorded Future threat assessments for 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: Solutions & Future -->
+<section id="solutions" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Chapter 05</span>
+      <h2 class="section-title">Solutions &amp; The Road Ahead</h2>
+    </div>
+
+    <p class="lead-text">The fight against deepfakes demands more than better detectors. It requires a transformation of how institutions, platforms, and individuals produce, validate, and consume information.</p>
+
+    <div class="solutions-grid">
+      <div class="solution-card">
+        <div class="sol-header">
+          <span class="sol-icon">🔍</span>
+          <h3>Detection Technology</h3>
+        </div>
+        <p>AI-powered tools like Intel's FakeCatcher and Pindrop Pulse Inspect analyze biometric signals, GAN fingerprints, and audio-visual mismatches to identify synthetic content. Audio deepfake detectors achieve ~88.9% accuracy in controlled settings — though this degrades under adversarial conditions.</p>
+        <div class="sol-status">
+          <span class="status-dot status-active"></span>
+          Currently deployed
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="sol-header">
+          <span class="sol-icon">📜</span>
+          <h3>Regulation</h3>
+        </div>
+        <p>The EU's AI Act mandates transparency about AI-manipulated content. California's AB 3211 introduced digital content provenance standards. The FTC has proposed new rules against AI impersonation. However, regulation consistently lags behind the pace of technology.</p>
+        <div class="sol-status">
+          <span class="status-dot status-progress"></span>
+          In progress globally
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="sol-header">
+          <span class="sol-icon">🔏</span>
+          <h3>Content Credentials (C2PA)</h3>
+        </div>
+        <p>The Coalition for Content Provenance and Authenticity (C2PA) is developing cryptographic "nutrition labels" for digital media — metadata that travels with an image or video, certifying its origin and any edits made. Major platforms are beginning to adopt this standard.</p>
+        <div class="sol-status">
+          <span class="status-dot status-progress"></span>
+          Emerging adoption
+        </div>
+      </div>
+
+      <div class="solution-card">
+        <div class="sol-header">
+          <span class="sol-icon">📚</span>
+          <h3>Media Literacy</h3>
+        </div>
+        <p>The SIFT method (Stop, Investigate the source, Find better coverage, Trace the claim) provides a practical framework for evaluating digital content. Public awareness campaigns are essential, especially for populations with lower digital literacy.</p>
+        <div class="sol-status">
+          <span class="status-dot status-needed"></span>
+          Urgently needed
+        </div>
+      </div>
+    </div>
+
+    <div class="detection-tips">
+      <h3 class="subsection-title">How to Spot a Deepfake</h3>
+      <div class="tips-list">
+        <div class="tip">
+          <span class="tip-num">01</span>
+          <div>
+            <strong>Watch the edges.</strong> Look for blurring, flickering, or unnatural smoothness around the hairline, ears, and neck — areas where AI often struggles to maintain consistency.
+          </div>
+        </div>
+        <div class="tip">
+          <span class="tip-num">02</span>
+          <div>
+            <strong>Listen for rhythm.</strong> AI voices can sound realistic but often lack natural pacing. Awkward pauses, inconsistent tone, and emotion that doesn't match facial expression are warning signs.
+          </div>
+        </div>
+        <div class="tip">
+          <span class="tip-num">03</span>
+          <div>
+            <strong>Trace the origin.</strong> Deepfakes often appear on new accounts or unverified domains. Check timestamps, context, and source authenticity.
+          </div>
+        </div>
+        <div class="tip">
+          <span class="tip-num">04</span>
+          <div>
+            <strong>Question urgency.</strong> Deepfake scams rely on emotional pressure to push fast action. If a video or audio message demands you act immediately — pause.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quiz Section -->
+<section id="quiz" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag light">Interactive</span>
+      <h2 class="section-title light">Can You Tell the Difference?</h2>
+    </div>
+    <p class="lead-text light-text" style="text-align:center; max-width:600px; margin:0 auto 3rem;">Test your ability to distinguish AI-generated descriptions and scenarios from real ones. Each challenge reveals how blurry the line has become.</p>
+
+    <div class="quiz-wrapper" id="quizWrapper">
+      <div class="quiz-progress">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <span class="progress-label" id="progressLabel">Question 1 of 6</span>
+      </div>
+
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-question-num" id="questionNum">01</div>
+        <div class="quiz-content" id="quizContent">
+          <!-- Populated by JS -->
+        </div>
+        <div class="quiz-options" id="quizOptions">
+          <!-- Populated by JS -->
+        </div>
+        <div class="quiz-feedback" id="quizFeedback" style="display:none"></div>
+        <button class="quiz-next" id="quizNext" style="display:none">Next Question →</button>
+      </div>
+
+      <div class="quiz-score-board" id="quizScore" style="display:none">
+        <div class="score-icon" id="scoreIcon">🎯</div>
+        <div class="score-headline" id="scoreHeadline"></div>
+        <div class="score-display">
+          <span id="scoreNum">0</span><span>/6</span>
+        </div>
+        <p id="scoreMsg"></p>
+        <button class="quiz-restart" id="quizRestart">Try Again ↺</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Conclusion -->
+<section id="conclusion" class="section">
+  <div class="container">
+    <div class="conclusion-layout">
+      <div class="conclusion-text">
+        <span class="section-tag">Conclusion</span>
+        <h2 class="section-title">The Question We Must Answer</h2>
+        <p class="lead-text">We have always understood photographs as evidence, voices as identity, and video as reality. Deepfakes don't just create false content — they undermine our very ability to trust any content.</p>
+        <p>The technology is accelerating faster than our legal, social, and technical defenses can adapt. The Generative AI market is projected to grow 560% between 2025 and 2031, reaching $442 billion. With that growth comes an arms race between deception and detection that humans alone cannot win.</p>
+        <p>But this isn't a call for despair. It's a call for action — by technologists who must build trustworthy systems, by lawmakers who must craft enforceable protections, by platforms who must prioritize provenance over virality, and by each of us who must become more skeptical, more thoughtful consumers of digital information.</p>
+        <div class="conclusion-quote">
+          <p>"We must not simply train individuals. We must redesign the systems that fail them."</p>
+          <cite>— UNESCO, <em>Deepfakes and the Crisis of Knowing</em>, 2025</cite>
+        </div>
+        <p>The death of digital trust is not inevitable. But preventing it demands that we treat this as the civilizational challenge it truly is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">DEEPFAKES<span>.</span></div>
+      <p class="footer-tagline">A documentary investigation into AI, authenticity, and the future of truth.</p>
+    </div>
+
+    <div class="footer-about">
+      <h4>About the Developer</h4>
+      <p>Oishiq Ahmed. Current 11th-grade student in Govt. Brajomohon College, Barishal. An aspiring developer.</p>
+      <br>
+      <h4>Sources</h4>
+      <p class="footer-note">UNESCO (2025), Deloitte Connected Consumer Study (2024), Recorded Future Insikt Group, Pindrop/Voicebot.ai, McAfee, WellSaid Labs, SQ Magazine.</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Connect</h4>
+      <div class="contact-links">
+        <a href="mailto:oishiqahmed388@gmail.com" class="contact-link" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <a href="https://wa.me/01709302810" class="contact-link" title="WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.facebook.com/share/1DnbPTZ5WZ/" class="contact-link" title="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/oishiiiq?igsh=MWszdG4xeDN3eWxsdw==" class="contact-link" title="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Deepfakes Documentary Project. All research sourced from credible institutions. This site contains no AI-generated images.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
